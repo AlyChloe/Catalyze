@@ -1,0 +1,265 @@
+/************** General ******************/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	background-color: #1b6584;
+}
+section, ul, .main-container {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main-container {
+	margin-top: 83px;
+}
+h3, .main-container, nav ul ul {
+	font-size: 14px;
+}
+h3 {
+	font-weight: 400;
+	border-bottom: 1px solid #1b6584;
+	margin-top: 0;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+table, .graph {
+	box-shadow: 0px 1px 5px 0px #c4c4c4;
+	-moz-box-shadow: 0px 1px 5px 0px #c4c4c4;
+	-webkit-box-shadow: 0px 1px 5px 0px #c4c4c4;
+}
+.link a {
+	text-decoration: none;
+	color: #000;
+}
+.link a, .bold, td {
+	font-weight: 500;
+}
+.sec-team td:nth-child(3), footer {
+	font-weight: 300;
+}
+footer, nav ul ul li a, span.high, span.mid, span.low, .fa {
+	color: #fff;
+}
+nav ul li a, td, .sec-team td:nth-child(3), footer {
+	letter-spacing: 0.5px;
+}
+nav, nav ul ul li, table, .sec-task img, hr {
+	width: 100%;
+}
+/************** Nav ******************/
+.logo {
+	margin-left: -26px;
+	margin-top: -2px;
+}
+nav {
+	background-color: #ffe614;
+	height: 63px;
+	position: fixed;
+    left: 0;
+    top: 0;
+    color: #062e40;
+}
+nav ul li {
+	display: inline-block;
+	text-decoration: none;
+}
+nav ul li:first-child {
+	float: left;
+}
+nav ul li:last-child {
+	float: right;
+	padding-right: 6px;
+}
+.sign-out {
+	padding-right: 0 !important;
+}
+nav ul li:hover > ul {
+	display: block;
+    box-shadow: 1px 3px 10px 0px #696969;
+    -moz-box-shadow: 1px 3px 10px 0px #696969;
+	-webkit-box-shadow: 1px 3px 10px 0px #696969;
+
+}
+nav ul li:hover > ul, nav ul ul li a:hover, section, span {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+nav ul li:hover a {
+	color: #1b6584;
+
+}	
+nav ul li a {
+	display: block; 
+	padding: 5px 20px 40px;
+	color: #1b6584; 
+	text-decoration: none;
+}
+nav ul ul {
+	display: none;
+	background: #f0f5f7; 
+	border-radius: 0px; 
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	padding: 0;
+	position: absolute; 
+	top: 100%;
+    width: 137px;
+}
+nav ul ul li {
+	float: none; 
+	position: relative;
+}
+nav ul ul li a {
+	padding: 15px 20px;
+}	
+nav ul ul li a:hover, span.mid {
+	background: #ffe614;
+}
+.chloe {
+	float: left;
+    margin-left: -33px;
+    margin-top: -5px;
+}
+.drop-down-menu {
+	margin-left: 6px;
+}
+/************** Project Name ******************/
+.design {
+	background: #ededed;
+}
+table {
+	border-collapse: collapse;
+}
+table, .project-table, .task, .priority, .date, .team, .owner, th, section, .graph {
+    border: 1px solid #1b6584;
+}
+section {
+	background-color: #f0f5f7;
+	margin-top: 20px;
+}
+h3, table {
+	background-color: #fff;
+}
+.task {
+	width: 83px;
+}
+.priority {
+	width: 100px;
+}
+.date {
+	width: 140px;
+}
+.team {
+	width: 90px;
+}
+td, h3, section {
+	padding: 10px;
+}
+section {
+	padding-top: 0px;
+}
+span {
+	padding: 1px 8px;
+}
+
+span.high {
+    background: #D4314D;
+}
+span.low {
+    background: #989105;
+}
+/************** Task & Team Sections ******************/
+.sec-task {
+	float: left;
+	padding-bottom: 12px;
+}
+.sec-team {
+	float: right;
+	padding-bottom: 13px;
+}
+.sec-task, .sec-team {
+	width: 47.3%;
+}
+.ryan, .emily {
+	width: 42px;
+    padding-right: 0;
+    padding-bottom: 5px;
+}
+.sec-team td:nth-child(2) {
+    width: 82px;
+}
+.sec-team td:nth-child(3) {
+    color: #a0a0a0;
+}
+.graph {
+	min-height: 116px;
+	background-color: #fff;
+}
+/************** Footer ******************/
+footer {
+	position: relative;
+    top: 21px;
+    height: 0;
+}
+footer p {
+	font-size: 13.5px;
+}
+hr {
+	border: #f0f5f7 solid 1px;
+}
+footer ul {
+	padding-left: 0;
+	margin-top: 20px;
+}
+.fa:before {
+	font-size: 20px;
+}
+.fa {
+	margin-right: 5px;
+}
+/********** Media Queries **************/
+@media screen and (max-width: 1225px) {
+	.main-container {
+		width: 95%;
+	}
+	.sec-task, .sec-team {
+		width: 46.8%;
+	}
+	.sec-task {
+		padding-bottom: 14.5px;
+	}
+}
+@media screen and (max-width: 857px) {
+	.sec-task, .sec-team, section {
+		float: none;
+		display: block;
+		width: 93%;
+		margin-left: auto;
+    	margin-right: auto;
+	}
+	h3, .main-container {
+		font-size: 11.5px;
+	}
+	.sec-task {
+		padding-bottom: 13px;
+	}
+	footer {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 394px) {
+	td {
+    	padding: 6px;
+	}
+	section {
+		min-width: 94%;
+		border-radius: 0;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+	}
+	.main-container {
+    	width: 100%;
+	}
+}
